@@ -19,17 +19,8 @@ $(document).ready(function () {
     // Days, hours, minutes & seconds
     let days, hours, minutes, time = 0
 
-    // Check for the 1st. time
-    const urlType = window.location.toString().charAt(window.location.toString().length - 1)
-    // First time
-    if (urlType != "?") {
-        // Mock users
-        localStorage.setItem("users", JSON.stringify(regUsers));
-
-    } else {
-        // After Log out
-        regUsers = JSON.parse(localStorage.getItem("users"));
-    }
+    // First time?
+    localStorage.getItem('users') ? regUsers = JSON.parse(localStorage.getItem("users")) : localStorage.setItem("users", JSON.stringify(regUsers));
 
     // App trigger
     $('#clickLogin').click(function (event) {
@@ -60,7 +51,7 @@ $(document).ready(function () {
         }
     }
 
-    // Update register in DDBB
+    // Update register in DDBB & get new Date
     saveUser = function (arr, item) {
         const i = arr.indexOf(item);
         arr.splice(i, 1);
