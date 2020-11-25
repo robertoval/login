@@ -1,7 +1,7 @@
 # INSTRUCCIONES
 
 Para probar el prototipo es obligatorio conexión a Internet!!
-Maquetación responsiva (RWD) mediante uso de Bootstrap.
+Maquetación responsiva (RWD) mediante uso de Bootstrap, así como multi navegador (Chrome, Edge y Firefox).
 
 ## Frameworks utilizados
 
