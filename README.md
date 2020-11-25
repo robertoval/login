@@ -10,13 +10,13 @@ Maquetación responsiva (RWD) mediante uso de Bootstrap.
 
 ## Usuarios y Passwords necesarias:
 
-email: 'antonio@accenture.com',
+email: 'antonio@akceso.com',
 password: '12345678',
 
-email: 'pedro@accenture.com',
+email: 'pedro@akceso.com',
 password: '12345678',
 
-email: 'arancha@accenture.com',
+email: 'arancha@akceso.com',
 password: '12345678',
 
 ## Funcionamiento
