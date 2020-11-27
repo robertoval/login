@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const htmlResponse = "<div class='container'><div class='row justify-content-center'><div class='col-md-4'><div class='login-box__wrapper py-6 px-2'><div class='pb-5 text-center'><h1 class='font-weight-bold'>Welcome!</h1><div class='subtitle pb-5'>The last time you accessed was</div><form class='form-response'><div class='form-group digit--default'><span class='figure__block' id='ndays'></span><span class='figure__text'>days</span></div><div class='form-group digit--default'><span class='figure__block' id='nhours'></span><span class='figure__text'>hours</span></div><div class='form-group digit--default'><span class='figure__block' id='nmins'></span><span class='figure__text'>minutes</span></div><div class='form-group digit--default'><span class='figure__block' id='nsecs'></span><span class='figure__text'>seconds</span></div><div class='button__wrapper'><button id='clickLogout' type='submit' class='btn btn-primary btn--blue btn--active mt-5'>LOGOUT</button></div></form ></div ></div ></div></div>";
+    const htmlResponse = "<div class='container'><div class='row justify-content-center'><div class='col-md-4'><div class='card card-body card--custom py-6 px-2'><div class='pb-5 text-center'><h1 class='font-weight-bold'>Welcome!</h1><div class='subtitle pb-5'>The last time you accessed was</div><form class='form-response'><div class='form-group digit--default'><span class='figure__block' id='ndays'></span><span class='figure__text'>days</span></div><div class='form-group digit--default'><span class='figure__block' id='nhours'></span><span class='figure__text'>hours</span></div><div class='form-group digit--default'><span class='figure__block' id='nmins'></span><span class='figure__text'>minutes</span></div><div class='form-group digit--default'><span class='figure__block' id='nsecs'></span><span class='figure__text'>seconds</span></div><div class='button__wrapper'><button id='clickLogout' type='submit' class='btn btn-primary btn--blue btn--active mt-5'>LOGOUT</button></div></form ></div ></div ></div></div>";
     let regUsers = [
         {
             email: 'antonio@akceso.com',
@@ -24,7 +24,6 @@ $(document).ready(function () {
 
     // App trigger
     $('#clickLogin').click(function (event) {
-        event.preventDefault();
         const user = $('#email').val();
         const pass = $('#password').val();
         chkUser(user, pass);
